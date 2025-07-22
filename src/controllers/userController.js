@@ -6,10 +6,6 @@ const asyncHandler = require("../utils/AsyncHandler");
 
 
 const registerUser = asyncHandler(async (req, res) => {
-    //Get user credentials
-    //check if the user with that email exists or not --
-    //  if user exists throw error
-    // otherwise create one
 
     const { name, email } = req.body;
 
@@ -31,11 +27,6 @@ const registerUser = asyncHandler(async (req, res) => {
 
 
 const loginUser = asyncHandler(async (req, res) => {
-
-    // get name and email
-    //find the user with the given email\
-    //check if the name of user matches with the received name
-    //if everything is ok send response
 
     const { name, email } = req.body;
 

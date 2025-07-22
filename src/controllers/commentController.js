@@ -40,17 +40,4 @@ const getCommentsByBlogId = asyncHandler(async (req, res) => {
 
 })
 
-
-
-// const getCommentsByBlogId = asyncHandler(async (req, res) => {
-
-//     const { id } = req.params;
-
-//     const comment = await Comment.find({ blog: id }).populate('user', 'name')
-//         .sort({ createdAt: -1 })
-
-//     return res.status(201).json(new ApiResponse(200, comment, 'Comment sent successfully'))
-
-// })
-
 module.exports = { createComment, getCommentsByBlogId }

@@ -16,6 +16,4 @@ router.patch('/update-blog/:id', protect, authorizeRoles("admin"), updateBlog)
 
 router.delete('/deleteblog/:id', protect, authorizeRoles("admin"), deleteBlog)
 
-
-
 module.exports = router;
